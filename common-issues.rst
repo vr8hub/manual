@@ -32,6 +32,20 @@ Punctuation
 
 		    <p>“Shall we get supper at the Lame Cow?”</p>
 
+#. Hyphens should be updated to reflect modern usage. As words come into common usage, they generally lose a hyphen or become a compound word. To check if a word should or should not be hyphenated, consult Merriam-Webster.
+
+    .. class:: wrong
+
+      .. code:: html
+
+        <p>…a door to the right leads to the entrance-hall…</p>
+
+    .. class:: corrected
+
+      .. code:: html
+
+        <p>…a door to the right leads to the entrance hall…</p>
+
 Capitalization
 **************
 #. Lowercase words immediately following exclamations and question-marks was a common practice and should be left as is.
@@ -133,4 +147,3 @@ Italics
 	    .. code:: html
 
 		    <p></p>
-
