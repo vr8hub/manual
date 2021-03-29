@@ -2,21 +2,21 @@
 How to create figures for music scores
 ######################################
 
-Standard Ebooks handles instances of music notation in books by recreating them in a modern score editor and embedding them as SVG files much as we would any other illustration. To explain the process, we consider the example of :italics:`Man and Superman <https://standardebooks.org/ebooks/george-bernard-shaw/man-and-superman>`, which has three instances of music notation.
+Standard Ebooks handles instances of music notation in books by recreating them in a modern score editor and embedding them as SVG files much as any other illustration. To explain the process,  consider the example of :italics:`Man and Superman <https://standardebooks.org/ebooks/george-bernard-shaw/man-and-superman>`, which has three instances of music notation.
 
 Finding sources
 ***************
-In `the original Project Gutenberg transcription <https://www.gutenberg.org/files/3328/3328-h/3328-h.htm>`, the music is simply referenced as :string:`(a staff of music is supplied here)`. We therefore have to go find the relevant music in `the scans of the source <https://archive.org/details/manandsupermana06shawgoog/page/n132/mode/1up>`.
+In `the original Project Gutenberg transcription <https://www.gutenberg.org/files/3328/3328-h/3328-h.htm>`, the music is simply referenced as :string:`(a staff of music is supplied here)`. You therefore have to go find the relevant music in `the scans of the source <https://archive.org/details/manandsupermana06shawgoog/page/n132/mode/1up>`.
 
 image:: images/music-notation-1-scan.png
 
-This image is not clear enough that we could simply follow the illustration tracing procedure, and even if we could, the goal is not to duplicate the source as exactly as possible but instead to produce a clean, modern, legible version of it.
+This image is not clear enough that it is possible to simply follow the illustration tracing procedure, and even if it were could, the goal is not to duplicate the source as exactly as possible but instead to produce a clean, modern, legible version of it.
 
 Recreating with a scorewriter
 *****************************
-A number of modern scorewriters exist, including `several free options <https://en.wikipedia.org/wiki/Comparison_of_scorewriters>`. While any of these that can output MusicXML and SVG files can be made to work, we recommend `MuseScore <https://musescore.org/>` as a powerful, open source option.
+A number of modern scorewriters exist, including `several free options <https://en.wikipedia.org/wiki/Comparison_of_scorewriters>`. While any of these that can output MusicXML and SVG files can be made to work, `MuseScore <https://musescore.org/>`, a powerful, open source option, is the SE default.
 
-The score should be recreated as closely as possible while still being readable, but at this stage it does not need to be perfect as it can be further edited by an SVG editor. At this point, the priority is for it to be human-readable, not for it your scorewriter to produce the best possible playback.
+The score should be recreated as closely as possible while still being readable, but at this stage it does not need to be perfect as it can be further edited by an SVG editor. At this point, the priority is for it to be human-readable, not for the scorewriter to produce the best possible playback.
 
 image:: images/music-notation-2-MuseScore.png
 
@@ -32,7 +32,7 @@ MusicXML files should be named :string:`illustration-n.xml` and saved in :string
 
 Edit in a vector graphics editor
 ********************************
-While there are `a number of vector graphics editors <https://en.wikipedia.org/wiki/Comparison_of_vector_graphics_editors>` available and you are free to use whichever you are most familiar with to make visual changes to the score, we highly recommend that you also install `Inkscape <https://inkscape.org/>` so that you can use specific plugins to clean up the SVG.
+There are `a number of vector graphics editors <https://en.wikipedia.org/wiki/Comparison_of_vector_graphics_editors>` available and you are free to use whichever you are most familiar with to make visual changes to the score. Regardless of what you use to make visual edits, `Inkscape <https://inkscape.org/>` and specific plugins available for it are are recommended to clean up the SVG code.
 
 image:: /images/music-notation-3-SVG.png
 
@@ -40,11 +40,11 @@ At this stage, final visual changes are made. The final rests and bars at the en
 
 Prepare the SVG file
 ********************
-As initially prepared by Inkscape or your vector graphics editor of choice, the SVG is unlikely to be in good shape. Any transformations need to be applied, all colour needs to be removed to allow for readers with an inverted color scheme, and the header needs to be corrected. For the complete SE guidance on SVG files, see `section 10.2 of the manual <https://standardebooks.org/manual/1.4.0/10-art-and-images#10.2>`.
+As initially prepared by Inkscape or your vector graphics editor of choice, the SVG is unlikely to be in good shape. Any transformations need to be applied, all colour needs to be removed to allow for readers with an inverted color scheme, and the header needs to be corrected. For the complete SE guidance on SVG files, see `section 10.2 of the manual <https://standardebooks.org/manual/1.5.0/10-art-and-images#10.2>`.
 
-Appling transformations
+Applying transformations
 =======================
-As generated by MuseScore, SVG files are likely to include transform elements throughout, which need to be removed. There are several ways to do this, but we recommend using one of the following two.
+As generated by MuseScore, SVG files are likely to include transform elements throughout, which need to be removed. There are several ways to do this, but the the following two are recommended.
 
 - Install the extension `Inkscape Apply Transforms <https://github.com/Klowner/inkscape-applytransforms>` and use this.
 
