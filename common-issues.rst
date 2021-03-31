@@ -32,19 +32,9 @@ Punctuation
 
 		    <p>“Shall we get supper at the Lame Cow?”</p>
 
-#. Hyphens should be updated to reflect modern usage. As words come into common usage, they generally lose a hyphen or become a compound word. To check if a word should or should not be hyphenated, consult Merriam-Webster.
+#. Hyphenation and compound words are some of the most changeable parts of the English language, and vary wildly across years and publishers. Some words are changed by modernize-spelling (for example, "good-bye" becomes "goodbye"), but most others are not. There is no need to change hyphenation beyond what is done by modernize-spelling.
 
-    .. class:: wrong
-
-      .. code:: html
-
-        <p>…a door to the right leads to the entrance-hall…</p>
-
-    .. class:: corrected
-
-      .. code:: html
-
-        <p>…a door to the right leads to the entrance hall…</p>
+Hyphenation can be optionally updated in [Editorial] commits, especially where it is judged to be overly archaic or frequently used. In this case, hyphenation should match Merriam-Webster.
 
 Capitalization
 **************
