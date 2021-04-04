@@ -20,12 +20,12 @@ The score should be recreated as closely as possible while still being readable,
 
 image:: images/music-notation-2-MuseScore.png
 
-At this point, MuseScore cannot fully replicate the original, so final changes will be made in a vector editing program. Once you are ready to progress to the next step, export the music into two formats: MusicXML and SVG.
+MuseScore cannot fully replicate the original, so final changes will be made in a vector editing program. Once you are ready to progress to the next step, export the music into two formats: MusicXML and SVG.
 
 .. tip::
   If you are not using MuseScore, you may need to `install a plugin <https://www.musicxml.com/>` to be able to export as MusicXML.
 
-MusicXML files should be named :string:`illustration-n.xml` and saved in :string:`./images/`. SVG files should be saved as :string:`illustration-n.svg` in :string:`./src/epub/images/`.
+MusicXML files should be named :string:`illustration-n.xml` and saved in :string:`./images/`. Ensure that they have a .xml filename. SVG files should be saved as :string:`illustration-n.svg` in :string:`./src/epub/images/`.
 
 .. tip::
   While you may need to have extra bars at the end of a phrase to decrease the layout stretch and compress the notation visually for SVG export, you should remove these extra bars, as well as any unused titles or other elements before saving as MusicXML.
