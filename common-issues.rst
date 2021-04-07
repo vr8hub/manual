@@ -32,6 +32,10 @@ Punctuation
 
 		    <p>“Shall we get supper at the Lame Cow?”</p>
 
+#. Hyphenation and compound words are some of the most changeable parts of the English language, and vary wildly across years and publishers. Some words are changed by modernize-spelling (for example, "good-bye" becomes "goodbye"), but most others are not. There is no need to change hyphenation beyond what is done by modernize-spelling.
+
+Hyphenation can be optionally updated in [Editorial] commits, especially where it is judged to be overly archaic or frequently used. In this case, hyphenation should match Merriam-Webster.
+
 Capitalization
 **************
 #. Lowercase words immediately following exclamations and question-marks was a common practice and should be left as is.
@@ -133,4 +137,3 @@ Italics
 	    .. code:: html
 
 		    <p></p>
-
