@@ -277,12 +277,12 @@ Required SE subjects for specific types of books
 Book descriptions
 *****************
 
-An ebook has two kinds of descriptions: a short :html:`<dc:description>` element, and a much longer :html:`<meta property="se:long-description">` element.
+An ebook has two kinds of descriptions: a short :html:`<dc:abstract>` element, and a much longer :html:`<dc:description>` element.
 
 The short description
 =====================
 
-The :html:`<dc:description>` element contains a short, single-sentence summary of the ebook.
+The :html:`<dc:abstract>` element contains a short, single-sentence summary of the ebook.
 
 #.	The description is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
 
@@ -317,7 +317,7 @@ The :html:`<dc:description>` element contains a short, single-sentence summary o
 The long description
 =====================
 
-The :html:`<meta property="se:long-description">` element contains a much longer description of the ebook.
+The :html:`<dc:description>` element contains a much longer description of the ebook.
 
 #.	The long description is a non-biased, encyclopedia-like description of the book, including any relevant publication history, backstory, or historical notes. It is as detailed as possible without giving away plot spoilers. It does not impart the producer’s opinions of the book, or include content warnings. Think along the lines of a Wikipedia-like summary of the book and its history, *but under no circumstances can a producer copy and paste from Wikipedia!* (Wikipedia licenses articles under a CC license which is incompatible with Standard Ebooks’ CC0 public domain dedication.)
 
@@ -347,7 +347,7 @@ The :html:`<meta property="se:long-description">` element contains a much longer
 
 #.	The long description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
 
-#.	The long description is in *escaped* HTML, with the HTML beginning on its own line after the :html:`<meta property="se:long-description">` element.
+#.	The long description is in *escaped* HTML, with the HTML beginning on its own line after the :html:`<dc:description>` element.
 
 	.. tip::
 
