@@ -279,14 +279,14 @@ Book descriptions
 
 An ebook has two kinds of descriptions: a short :html:`<dc:abstract>` element, and a much longer :html:`<dc:description>` element.
 
-The short description
-=====================
+The abstract
+============
 
 The :html:`<dc:abstract>` element contains a short, single-sentence summary of the ebook.
 
-#.	The description is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
+#.	The abstract is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
 
-#.	The description summarizes the main theme or plot thread in the book, in an active voice, without using proper names.
+#.	The abstract summarizes the main theme or plot thread in the book, in an active voice, without using proper names.
 
 	.. class:: wrong
 
@@ -308,18 +308,18 @@ The :html:`<dc:abstract>` element contains a short, single-sentence summary of t
 
 	.. tip::
 
-		Exceptions for proper names can be made for well-known people with which the reader can be assumed to be familiar, e.g. Julius Caesar. A rule of thumb is that if replacing a famous proper name with a general description would be surprising, then consider keeping the proper name. For example, if you wrote :html:`A famous Roman general recounts the Gallic Wars` then a reader might be surprised to learn that the description refers to not just *any* famous Roman general... but to one of the most important figures in all of Western history!
+		Exceptions for proper names can be made for well-known people with which the reader can be assumed to be familiar, e.g. Julius Caesar. A rule of thumb is that if replacing a famous proper name with a general description would be surprising, then consider keeping the proper name. For example, if you wrote :html:`A famous Roman general recounts the Gallic Wars` then a reader might be surprised to learn that the abstract refers to not just *any* famous Roman general... but to one of the most important figures in all of Western history!
 
-#.	For collections, compilations, and omnibuses, a sentence fragment is acceptable as a description.
+#.	For collections, compilations, and omnibuses, a sentence fragment is acceptable as an abstract.
 
-#.	The description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
+#.	The abstract is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
 
-The long description
+The description
 =====================
 
-The :html:`<dc:description>` element contains a much longer description of the ebook.
+The :html:`<dc:description>` element contains a much longer description of the ebook compared to the abstract.
 
-#.	The long description is a non-biased, encyclopedia-like description of the book, including any relevant publication history, backstory, or historical notes. It is as detailed as possible without giving away plot spoilers. It does not impart the producer’s opinions of the book, or include content warnings. Think along the lines of a Wikipedia-like summary of the book and its history, *but under no circumstances can a producer copy and paste from Wikipedia!* (Wikipedia licenses articles under a CC license which is incompatible with Standard Ebooks’ CC0 public domain dedication.)
+#.	The description is a non-biased, encyclopedia-like description of the book, including any relevant publication history, backstory, or historical notes. It is as detailed as possible without giving away plot spoilers. It does not impart the producer’s opinions of the book, or include content warnings. It does not include general biographical information about the author, unless that information is directly relevant to this particular book. Think along the lines of a Wikipedia-like summary of the book and its history, *but under no circumstances can a producer copy and paste from Wikipedia!* (Wikipedia licenses articles under a CC license which is incompatible with Standard Ebooks’ CC0 public domain dedication.)
 
 	.. tip::
 
@@ -345,24 +345,24 @@ The :html:`<dc:description>` element contains a much longer description of the e
 
 		-	**For nonfiction, much of the above applies.** A memoir or travelogue still has enough narrative events that you can give a premise. A collection of essays has plenty of themes to discuss. Collections of mythology can talk about why the author collected those stories. Scientific books (e.g. Darwin) can distill the ideas first introduced in those books.
 
-#.	The long description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
+#.	The description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
 
-#.	The long description is in *escaped* HTML, with the HTML beginning on its own line after the :html:`<dc:description>` element.
+#.	The description is in *escaped* HTML, with the HTML beginning on its own line after the :html:`<dc:description>` element.
 
 	.. tip::
 
-		The :bash:`se clean` tool will escape HTML in the long description for you. You can write regular HTML in the long description, then run :bash:`se clean` to escape it automatically.
+		The :bash:`se clean` tool will escape HTML in the description for you. You can write regular HTML in the description, then run :bash:`se clean` to escape it automatically.
 
-#.	Long description HTML follows the `general code style conventions </manual/VERSION/1-code-style>`__.
+#.	The description HTML follows the `general code style conventions </manual/VERSION/1-code-style>`__.
 
-#.	The first occurrence of the author’s name is linked to the Standard Ebooks author page. For example, for Arthur Conan Doyle this would look like :html:`<a href="https://standardebooks.org/ebooks/arthur-conan-doyle">Arthur Conan Doyle</a>`. If the long description references other authors, books and story collections that already have pages on Standard Ebooks then the first occurrence of these are linked as well.
+#.	The first occurrence of the author’s name is linked to the Standard Ebooks author page. For example, for Arthur Conan Doyle this would look like :html:`<a href="https://standardebooks.org/ebooks/arthur-conan-doyle">Arthur Conan Doyle</a>`. If the description references other authors, books and story collections that already have pages on Standard Ebooks then the first occurrence of these are linked as well.
 
-#.	The long description does not contain external links other than links to other Standard Ebooks books or authors.
+#.	The description does not contain external links other than links to other Standard Ebooks books or authors.
 
 Book language
 *************
 
-#.	The :html:`<dc:language>` element follows the long description block. It contains the `IETF language tag <https://en.wikipedia.org/wiki/IETF_language_tag>`__ for the language that the work is in.
+#.	The :html:`<dc:language>` element follows the description block. It contains the `IETF language tag <https://en.wikipedia.org/wiki/IETF_language_tag>`__ for the language that the work is in.
 
 #.	If a book contains files that are in a variety of languages or dialects, then :html:`<dc:language>` is set to the predominant language of the book.
 
@@ -592,7 +592,7 @@ These elements describe the SE producer who produced the ebook for the Standard 
 
 	-	:string:`bkp`: The producer produced the ebook as :value:`role`.
 
-	-	:string:`blw`: The producer wrote the blurb (the long description) as :value:`role`.
+	-	:string:`blw`: The producer wrote the blurb (the description) as :value:`role`.
 
 	-	:string:`cov`: The producer selected the cover art as :value:`role`.
 
